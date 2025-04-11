@@ -1,0 +1,251 @@
+{% load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} Portfolio - Home {% endblock %}</title>
+    <link rel="stylesheet" href="/static/css/base.css">
+    {%block extrahead %}
+    {%endblock extrahead %}
+
+
+
+</head>
+<body>
+
+    
+    
+    <nav id="navbar" class="flex s-around bg-color">
+        <div class="left-nav">
+            <h2 class="t-white">Welcome to My Portfolio</h2>
+            <p>Explore my projects and contact me if you have any inquiries.</p>
+        </div>
+        <div class="right-nav">
+            <li>
+                <a href="#home" class="t-whiteroboto">Home
+                    <i class="fa-solid fa-house"></i>
+                </a>
+            </li>
+            <li><a href="#about" class="t-whiteroboto">About
+                <i class="fa-solid fa-user"></i>
+            </a></li>
+            <li><a href="#skills" class="t-whiteroboto">Skills
+                <i class="fa-solid fa-code"></i>
+            </a></li>
+            <li><a href="#projects" class="t-whiteroboto">Projects
+                <i class="fa-solid fa-project-diagram"></i>
+            </a></li>            
+            <li><a href="#contact" class="t-whiteroboto">Contact
+                <i class="fa-solid fa-rocket"></i>
+            </a></li>
+        </div>
+
+    </nav>
+    <section id="none" class="flex s-around sw-80 m-auto">
+        <div class="home-left flex items-center">
+            <div class="home-content">
+                <h5 class="popinss">Hi, i'm</h5>
+                <h2 class="t-white">Nnedinma Ezemonye</h2>
+                <h4 class="popinss"> a Python Programmer</h4>
+                <a href="{% static 'code/my resume.pdf' %}" target="_blank">
+                    <button class="btn popinss">Resume</button>
+                </a>
+                <div>
+                    <a class="btn live popinss" id="hireme"   href="" target=" _blank" >Contact me</a>
+                </div>          
+
+            </div>
+        </div>
+        <div class="home-right flex s-center items-center">
+            <div class="circle flex s-center items-center" id="mainimage">
+                <img src="{% static 'image/me.jpg' %}"  alt="My picture" style="width: 200px; height: auto;" srcset="">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h1 class="t center my-2 t-white f-2">About <menu></menu></h1>
+        <div class="about-container flex s-around">
+            <div class="about-left flex s-center items-center">
+                <img src="{% static 'image/nne.jpg' %}"  alt="nne picture" style="width: 200px; height: auto;" srcset="">
+            </div>
+        </div>
+        <div class="about-right flex">
+            <h2 class="t-white a-b-1 popinss">Nnedinma Favour</h2>
+            <p class="t-white popinss">I'm an entry-level Python developer and a biochemistry student, with a mix of technical and scientific skills </p>
+            <a id="hireme" href="mailto:your.email@example.com" class="btn popinss">Hire me</a>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="t-center my-2 t-white f-2"> Skills</h2>
+        <div class="services-container flex s-around h-50">
+            <div class="skills-left flex s-center items-center">
+                <img src="{%static 'image/setup.jpg' %}"  alt="nne picture" style="width: 200px; height: auto;" srcset="">
+            </div>
+            <div class="skills-right flex items-center">
+                <div class="skills-container">
+
+                    <div class="python bar p-relative "><span class="bar-content left t-white"> Core Python - </span> 
+                    <span class="bar-content right-skills t-white">80%</span></div>
+                    
+                    <div class="django bar p-relative "><span class="bar-content left t-white">Django - </span>
+                    <span class="bar-content right-skills t-white">60%</span></div>
+
+                    <div class="data bar p-relative "><span class="bar-content left t-white"> Data Analysis- </span> 
+                    <span class="bar-content right-skills t-white">60%</span></div>
+                                
+                    <div class="web bar p-relative "><span class="bar-content left t-white">Basic Web Development - </span>
+                    <span class="bar-content right-skills t-white">60%</span></div>
+                                        
+                    <div class="python bar p-relative "><span class="bar-content left t-white">Automation & Scripting</span>
+                    <span class="bar-content right-skills t-white">60%</span></div>     
+                    <div class="python bar p-relative "><span class="bar-content left t-white"></span>
+                    <span class="bar-content right-skills t-white"></span></div>              
+        
+                 
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="Project">
+        <h1 class="t-center my-2 t-white f-2 " Project></h1>
+        <div class="project-container flex s-center">
+            <div class="project-item flex f-cool s-center items-center">
+                <h2 class=" t-white popinss">Project 1</h2>
+                <p class="t-white popinss">Project 1 description</p>
+                <div class="button flex s-around">
+                    <a href="" target="_blank" class="btn mx-1 m-top">Github i don't know what this is but yeah</a>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <div class="project-container flex s-center">
+            <div class="project-item flex f-cool s-center items-center">
+                <h2 class=" t-white popinss">Project 2</h2>
+                <p class="t-white popinss">Project 2 description</p>
+                <div class="button flex s-around">
+                    <a href="" target="_blank" class="btn mx-1 m-top">Github i don't know what this is but yeah</a>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="project-container flex s-center">
+            <div class="project-item flex f-cool s-center items-center">
+                <h2 class=" t-white popinss">Project 3</h2>
+                <p class="t-white popinss">Project 3 description</p>
+                <div class="button flex s-around">
+                    <a href="" target="_blank" class="btn mx-1 m-top">Github i don't know what this is but yeah</a>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="project-container flex s-center">
+            <div class="project-item flex f-cool s-center items-center">
+                <h2 class=" t-white popinss">Project 4</h2>
+                <p class="t-white popinss">Project 4 description</p>
+                <div class="button flex s-around">
+                    <a href="" target="_blank" class="btn mx-1 m-top">Github i don't know what this is but yeah</a>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="m-b-1">
+        <h2 class="t-center my-2 t-white f-2">Contact Me</h2>
+        <div class="contact-container flex s-around-items-center">
+            <div class="form " id="contactform">
+                <form method="post">
+                    <div class="name fore-div">
+                        <input type="text" name="name" id="name" class="popinns" placeholder="Enter your Name" required>
+                    </div>
+
+                    <div class="email fore-div">
+                        <input type="email" name="email" id="" class="popinns" placeholder="Enter your Email" required>
+                    </div>
+
+                    <div class="number fore-div">
+                        <input type="number" name="number" id="name" class="popinns" placeholder="Enter your Phone No" required>
+                    </div>
+
+                    <div class="textarea fore-div">
+                        <textarea type="content" name="content" id="textarea" color="30" rows="10" class="popinns" placeholder="Additoional message"></textarea>
+                    </div>
+                    <button type="submit" class="btn popinns" id="submit">Send</button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <ul class="flex s-center w-800 m-auto my-2  res">
+            <li><a href="#home" class="popinss">Home</a> </li>
+            <li><a href="#about" class="popinss">About</a> </li>
+            <li><a href="#skills" class="popinss">Skills</a> </li>
+            <li><a href="#project" class="popinss">Project</a> </li>
+            <li><a href="#portfolio" class="popinss">Portfolio</a> </li>
+        </ul>
+
+
+        <ul class="flex s-center w-80 font-awesome">
+            <a href="" target="_blank"> <li><i class="fe-brands fa-linkedin-in"></i>Linkedin </li>  </a>
+            <!--<p class="t-center my-2popinss">copy; All Right Reserved-<span class="cpy-white popins">Error By night</span> </p>
+        -->
+        </ul>
+
+        <p class="t-center my-2 popinss">copyright; All Right Reserved</p>
+    </footer>
+
+
+
+
+
+
+    <!--
+    <header> 
+        <ul class="nav-menu">
+            <li><a href="/home">Home</a></li>
+            <li><a href="/contact">Contact</a></li>
+            
+        </ul>
+        <img src="{% static 'image/me.jpg' %}" alt="My picture" style="width: 200px; height: auto;" srcset="">
+
+
+    </header>-->
+   
+
+    
+
+    <main>
+        {% block content%}
+        {% endblock content%}
+    </main>
+   
+    {%block extra_js%}
+    {%endblock extra_js%}
+    
+
+    
+    
+
+    
+</body>
+</html>
+
+
+
+
