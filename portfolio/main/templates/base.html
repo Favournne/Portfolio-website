@@ -43,127 +43,90 @@
         </div>
 
     </nav>
-    <section id="none" class="flex s-around sw-80 m-auto">
-        <div class="home-left flex items-center">
-            <div class="home-content">
-                <h5 class="popinss">Hi, i'm</h5>
-                <h2 class="t-white">Nnedinma Ezemonye</h2>
-                <h4 class="popinss"> a Python Programmer</h4>
-                <a href="{% static 'code/my resume.pdf' %}" target="_blank">
-                    <button class="btn popinss">Resume</button>
-                </a>
-                <div>
-                    <a class="btn live popinss" id="hireme"   href="" target=" _blank" >Contact me</a>
-                </div>          
-
-            </div>
-        </div>
+    <section id="none" class="flex s-around sw-80 m-auto" style="flex-direction: column; align-items: center;">
         <div class="home-right flex s-center items-center">
             <div class="circle flex s-center items-center" id="mainimage">
-                <img src="{% static 'image/me.jpg' %}"  alt="My picture" style="width: 200px; height: auto;" srcset="">
+                <img src="{% static 'image/me.jpg' %}"  alt="My picture" srcset="">
             </div>
-        </div>
+            <div class="home-left flex items-center">
+                <div class="home-content">
+                    <h3 class="popinss">Hi, I'm</h3>
+                    <h2 class="t-white">Nnedinma Ezemonye</h2>
+                    <h4 class="popinss"> a Python Programmer</h4>
+                    <div class="button-container">
+                        <a href="/static/code/my%20resume.pdf" target="_blank">
+                            <button class="btn popinss">Resume</button>
+                        </a>
+                        <a class="btn live popinss" id="hireme" href="" target=" _blank">Contact me</a>
+                    </div>
+                </div>
+            </div>
     </section>
 
     <section id="about">
-        <h1 class="t center my-2 t-white f-2">About <menu></menu></h1>
+        
         <div class="about-container flex s-around">
-            <div class="about-left flex s-center items-center">
-                <img src="{% static 'image/nne.jpg' %}"  alt="nne picture" style="width: 200px; height: auto;" srcset="">
-            </div>
-        </div>
-        <div class="about-right flex">
-            <h2 class="t-white a-b-1 popinss">Nnedinma Favour</h2>
-            <p class="t-white popinss">I'm an entry-level Python developer and a biochemistry student, with a mix of technical and scientific skills </p>
-            <a id="hireme" href="mailto:your.email@example.com" class="btn popinss">Hire me</a>
-        </div>
+            <div class="about-right flex">
+                <p class="t-white popinss">I'm constantly learning and growing, and I’m excited to contribute to projects that solve real-world problems. Whether it's a small script or a full-scale application, I bring dedication, curiosity, and a problem-solving mindset to every line of code. </p>
+                <p class="t-white popinss">Feel free to explore my work and reach out if you'd like to connect or collaborate!</p>
+                <a id="hireme" href="mailto:your.email@example.com" class="btn popinss">Hire me</a>
+           </div>
+       </div>
     </section>
 
     <section id="skills">
-        <h2 class="t-center my-2 t-white f-2"> Skills</h2>
+        <h2 class="t-center my-2 t-white f-2"> Skill Set</h2>
         <div class="services-container flex s-around h-50">
-            <div class="skills-left flex s-center items-center">
-                <img src="{%static 'image/setup.jpg' %}"  alt="nne picture" style="width: 200px; height: auto;" srcset="">
-            </div>
             <div class="skills-right flex items-center">
-                <div class="skills-container">
-
-                    <div class="python bar p-relative "><span class="bar-content left t-white"> Core Python - </span> 
-                    <span class="bar-content right-skills t-white">80%</span></div>
-                    
-                    <div class="django bar p-relative "><span class="bar-content left t-white">Django - </span>
-                    <span class="bar-content right-skills t-white">60%</span></div>
-
-                    <div class="data bar p-relative "><span class="bar-content left t-white"> Data Analysis- </span> 
-                    <span class="bar-content right-skills t-white">60%</span></div>
-                                
-                    <div class="web bar p-relative "><span class="bar-content left t-white">Basic Web Development - </span>
-                    <span class="bar-content right-skills t-white">60%</span></div>
-                                        
-                    <div class="python bar p-relative "><span class="bar-content left t-white">Automation & Scripting</span>
-                    <span class="bar-content right-skills t-white">60%</span></div>     
-                    <div class="python bar p-relative "><span class="bar-content left t-white"></span>
-                    <span class="bar-content right-skills t-white"></span></div>              
-        
-                 
-
-
+                <div class="skills-container" style="display: flex; flex-wrap: wrap; gap: 10px;">
+                    <span class="skill-box">Core Python - 80%</span>
+                    <span class="skill-box">Django - 60%</span>
+                    <span class="skill-box">Data Analysis - 60%</span>
+                    <span class="skill-box">Basic Web Development - 60%</span>
+                    <span class="skill-box">Automation & Scripting - 65% </span>
                 </div>
             </div>
         </div>
-
     </section>
+
     <section id="Project">
-        <h1 class="t-center my-2 t-white f-2 " Project></h1>
-        <div class="project-container flex s-center">
+        <h1 class="t-center my-2 t-white f-2 ">Project</h1>
+        <div class="project-container">
             <div class="project-item flex f-cool s-center items-center">
                 <h2 class=" t-white popinss">Project 1</h2>
                 <p class="t-white popinss">Project 1 description</p>
                 <div class="button flex s-around">
-                    <a href="" target="_blank" class="btn mx-1 m-top">Github i don't know what this is but yeah</a>
+                    <a href="" target="_blank" class="btn mx-1 m-top">Github link</a>
                 </div>
-
-
             </div>
-        </div>
-
-
-        <div class="project-container flex s-center">
+    
             <div class="project-item flex f-cool s-center items-center">
                 <h2 class=" t-white popinss">Project 2</h2>
                 <p class="t-white popinss">Project 2 description</p>
                 <div class="button flex s-around">
-                    <a href="" target="_blank" class="btn mx-1 m-top">Github i don't know what this is but yeah</a>
+                    <a href="" target="_blank" class="btn mx-1 m-top">Github link</a>
                 </div>
-
-
             </div>
-        </div>
-
-        <div class="project-container flex s-center">
+    
             <div class="project-item flex f-cool s-center items-center">
                 <h2 class=" t-white popinss">Project 3</h2>
                 <p class="t-white popinss">Project 3 description</p>
                 <div class="button flex s-around">
-                    <a href="" target="_blank" class="btn mx-1 m-top">Github i don't know what this is but yeah</a>
+                    <a href="" target="_blank" class="btn mx-1 m-top">Github link</a>
                 </div>
-
-
             </div>
-        </div>
-
-        <div class="project-container flex s-center">
+    
             <div class="project-item flex f-cool s-center items-center">
                 <h2 class=" t-white popinss">Project 4</h2>
                 <p class="t-white popinss">Project 4 description</p>
                 <div class="button flex s-around">
-                    <a href="" target="_blank" class="btn mx-1 m-top">Github i don't know what this is but yeah</a>
+                    <a href="" target="_blank" class="btn mx-1 m-top">Github link</a>
                 </div>
-
-
             </div>
         </div>
     </section>
+
+
     <section id="contact" class="m-b-1">
         <h2 class="t-center my-2 t-white f-2">Contact Me</h2>
         <div class="contact-container flex s-around-items-center">
@@ -192,24 +155,21 @@
     </section>
 
     <footer id="footer">
-        <ul class="flex s-center w-800 m-auto my-2  res">
-            <li><a href="#home" class="popinss">Home</a> </li>
-            <li><a href="#about" class="popinss">About</a> </li>
-            <li><a href="#skills" class="popinss">Skills</a> </li>
-            <li><a href="#project" class="popinss">Project</a> </li>
-            <li><a href="#portfolio" class="popinss">Portfolio</a> </li>
-        </ul>
-
-
-        <ul class="flex s-center w-80 font-awesome">
-            <a href="" target="_blank"> <li><i class="fe-brands fa-linkedin-in"></i>Linkedin </li>  </a>
-            <!--<p class="t-center my-2popinss">copy; All Right Reserved-<span class="cpy-white popins">Error By night</span> </p>
-        -->
-        </ul>
-
+        <div class="footer-content flex s-center w-80 m-auto my-2 res font-awesome">
+            <ul class="horizontal-list">
+                <li><a href="#home" class="popinss">Home</a></li>
+                <li><a href="#about" class="popinss">About</a></li>
+                <li><a href="#skills" class="popinss">Skills</a></li>
+                <li><a href="#project" class="popinss">Project</a></li>
+            </ul>
+            <ul class="horizontal-list">
+                <a href="" target="_blank"><li><i class="fe-brands fa-linkedin-in"></i> LinkedIn</li></a>
+            </ul>
+        </div>
         <p class="t-center my-2 popinss">copyright; All Right Reserved</p>
     </footer>
 
+        
 
 
 
